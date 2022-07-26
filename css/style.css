@@ -1,0 +1,231 @@
+body{
+    color: black;
+}
+/** HEADER **/
+#header-nav {
+    border-radius: 0;
+    border: 0;
+}
+.container{
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+#logo-img {
+    background: url('../image/jnvlogo_150.jpg') no-repeat;
+    width: 110px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+#jnv {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a {
+    text-decoration: none;
+}
+#mhrd{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+}
+#sbg {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #222222;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.details{
+    text-align: right;
+}
+.details p{
+    margin: 0;
+}
+.bg-clr{
+    background-color: #17a2b8;
+    border: 2px solid #34ce57;
+}
+/*-------- end header -------*/
+/*-------- Body Start --------*/
+.s-slide{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.notice{
+    background-color: #c1ac10;
+}
+.notice span{
+    color: #c10d0c;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+.modal-dialog-scrollable p{
+    color: #c10d0c;
+    font-weight: bold;
+}
+.margin{
+    margin: 15px;
+}
+#principal, #vice-p{
+    text-align: justify;
+    border: black 1px solid;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #bac1b5;
+}
+#principal img{
+    float: left;
+}
+#principal span{
+    font-weight: bold;
+}
+#notice{
+    border: black 1px solid;
+    padding: 20px;
+    margin: 0 10px 10px;
+    text-align: center;
+    background-color: #bac1b5;
+}
+#notice-b{
+    border: black 1px solid;
+    margin: 0 10px 10px;
+    background-color: brown;
+    font-weight: bold;
+    text-align: center;
+}
+.col-lg-8-5, .col-md-8-5{
+    flex: 0 0 73%;
+    max-width: 73%;
+}
+/*-------- Body end --------*/
+/*-------- start footer -------*/
+.footer {
+    font-family: Consolas, sans-serif;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.footer p{
+    margin-bottom: 0;
+}
+.footer-bg{
+    background-color: #343a40;
+    color: white;
+}
+#c-tab{
+    margin-left: 25px;
+}
+#jnvs p{
+    font-size: .9em;
+    margin: 0;
+}
+img{
+    margin: 5px;
+}
+#links span, #regional span, #contact span{
+    font-size: 1em;
+    color: #95999c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#phone, #mail, #address span{
+    font-size: 1em;
+    color: #7abaff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#address p, #phone a, #mail a, .r-link a, .link a {
+    font-size: .9em;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+.map{
+    margin: 10px;
+}
+#map-title{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+}
+#map-title:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#map-title span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+/*------ end footer ------*/
+/*------------*/
+/*------------*/
+/*------ medium device ------*/
+@media (max-width: 991px) {
+    .details{
+        display: none;
+    }
+}
+/*------ small device ------*/
+@media (max-width: 768px) {
+    .details{
+        display: none;
+    }
+    #logo-img{
+        background: url("../image/jnvlogo_100.jpg");
+        width: 74px;
+        height: 100px;
+    }
+    #jnv{
+        font-size: 1.2em;
+    }
+    #sbg{
+        font-size: .9em;
+    }
+}
+
+/*------ extra small device ------*/
+@media (max-width: 568px) {
+    #logo-img{
+        display: none;
+    }
+    .details{
+        display: none;
+    }
+    #jnv{
+        font-size: 1.2rem;
+    }
+    #sbg{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .s-slide{
+        display: none;
+    }
+}
